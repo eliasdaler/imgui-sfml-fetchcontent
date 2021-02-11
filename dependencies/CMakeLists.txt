@@ -14,8 +14,8 @@ message(STATUS "Fetching third party libraries")
 #======================================
 
 set(SFML_VERSION 2.5.1)
-set(IMGUI_VERSION 1.68)
-set(IMGUI_SFML_VERSION 2.0)
+set(IMGUI_VERSION 1.81)
+set(IMGUI_SFML_VERSION 2.1)
 
 # It's nice to get stripped-down release zips instead of cloning
 # a repo and checking out a tag
