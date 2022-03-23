@@ -8,4 +8,6 @@ target_link_libraries(imgui-sfml-example
     ImGui-SFML::ImGui-SFML
 )
 
+set(CMAKE_EXE_LINKER_FLAGS "-static")
+
 include(Install.cmake)
