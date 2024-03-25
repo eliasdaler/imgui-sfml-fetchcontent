@@ -1,7 +1,16 @@
 include(FetchContent)
 
-set(SFML_VERSION 2.5.1)
-set(IMGUI_VERSION 1.87)
+option(LINK_DEPS_STATIC CACHE ON)
+
+# Don't build shared libs if we want to link to deps statically
+if(LINK_DEPS_STATIC)
+  set(BUILD_SHARED_LIBS OFF)
+else()
+  set(BUILD_SHARED_LIBS ON)
+endif()
+
+set(SFML_VERSION 2.6.1)
+set(IMGUI_VERSION 1.90.4)
 # set(IMGUI_SFML_VERSION 2.3)
 
 # It's nice to get stripped-down release zips instead of cloning
